@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://katawey.github.io/sitemap.xml
