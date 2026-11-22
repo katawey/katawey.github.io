@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>محمد محمد لطفي القطاوي</title>
+<meta name="description" content="الموقع الشخصي لـ أ. محمد محمد لطفي القطاوي — معلم اللغة العربية، شاعر وكاتب. مؤلف كتاب «التربية بالقيم: هدي نبوي وممارسات تربوية في بناء شخصية الطالب».">
+<meta name="author" content="محمد محمد لطفي القطاوي">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: هادئ، وقور، أدبي — صفحة معلّم وشاعر
+   IDEA: صفحة افتتاح مخطوطة عربية مذهّبة، بإطار المحراب نفسه الذي على غلاف كتابه
+   PICTURE: قوس محراب ذهبي كبير يحتضن الاسم، وغلاف الكتاب الحقيقي في قسم المؤلفات
+   COLOUR and TYPE: زمردي عميق، عاجي، ذهب؛ Amiri للعناوين وNoto Naskh للمتن
+   LAYOUT: افتتاحية كاملة العرض، ثم نبذة، مؤلفات، كتابات، تواصل، تذييل */
+:root{color-scheme:light dark;
+--bg:light-dark(#fbf7ec,#0b2422);--panel:light-dark(#fffdf6,#10302d);
+--ink:light-dark(#16302c,#efe4c2);--soft:light-dark(#4b605b,#c4bb9e);
+--em:#0f3b37;--em2:#124540;--gold:#c9a24a;--gold2:#e9cf8a;--ivory:#f6e7bd;
+--line:light-dark(#e3d6b0,#2a4a46)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.9 "Noto Naskh Arabic","Amiri",serif;overflow-x:clip}
+a{color:inherit}
+h1,h2,h3{font-family:"Amiri",serif;line-height:1.25;margin:0;text-wrap:balance}
+.wrap{max-width:1180px;margin-inline:auto}
+.band{padding:clamp(40px,6vw,88px) max(5vw,18px)}
+/* navigation */
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--em) 94%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid #c9a24a55}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px max(5vw,18px);flex-wrap:wrap}
+nav .brand{font-family:Amiri;font-weight:700;color:var(--ivory);font-size:20px;text-decoration:none}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{display:inline-block;padding:10px 12px;min-height:44px;color:#e7dcb8;text-decoration:none;border-radius:8px;font-size:15px}
+nav ul a:hover,nav ul a:focus-visible{background:#ffffff14;color:#fff;outline:none}
+/* hero */
+.hero{position:relative;background:radial-gradient(ellipse at 50% 40%,#1d5e57 0%,var(--em) 55%,#082523 100%);color:var(--ivory);overflow:hidden}
+.hero .pat{position:absolute;inset:0;opacity:.08;width:100%;height:100%}
+.hero .wrap{position:relative;display:grid;place-items:center;padding:clamp(28px,5vw,56px) max(5vw,18px) clamp(40px,6vw,72px)}
+.arch{position:relative;width:min(560px,92vw);aspect-ratio:560/640;display:grid;place-items:center;text-align:center}
+.arch svg{position:absolute;inset:0;width:100%;height:100%}
+.arch .in{position:relative;padding:22% 12% 10%}
+.arch h1{font-size:clamp(34px,6.4vw,54px);font-weight:700;color:#f8ebc4;text-shadow:0 4px 18px #0007}
+.arch .role{margin:14px 0 0;font-size:clamp(17px,2.4vw,21px);color:var(--gold2)}
+.arch .quote{margin:22px auto 0;max-width:30ch;font-size:16px;color:#e5dbbd;line-height:1.85}
+.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:8px 22px;border-radius:999px;font:600 16px "Noto Naskh Arabic",serif;text-decoration:none;border:1.5px solid var(--gold);transition:background .2s}
+.btn.solid{background:var(--gold);color:#13302b}
+.btn.solid:hover{background:var(--gold2)}
+.btn.ghost{color:var(--ivory)}
+.btn.ghost:hover{background:#ffffff14}
+.btn:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+/* section heads */
+.head{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+.head h2{font-size:clamp(30px,4vw,40px);color:var(--ink)}
+.head .orn{flex:1;height:1px;background:linear-gradient(to left,var(--gold),transparent)}
+.head svg{flex:none}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.about p{margin:0 0 14px;max-width:68ch}
+.facts{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.facts h3{font-size:22px;margin-bottom:10px;color:var(--gold)}
+.facts ul{list-style:none;margin:0;padding:0}
+.facts li{padding:10px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px}
+.facts li:last-child{border:0}
+.facts b{flex:none;width:6.5em;color:var(--soft);font-weight:600}
+/* book */
+.bookband{background:linear-gradient(180deg,var(--em2),var(--em));color:var(--ivory)}
+.bookband .head h2{color:var(--ivory)}
+.book{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center}
+.cover{position:relative;border-radius:6px 14px 14px 6px;overflow:hidden;box-shadow:0 30px 60px #0008,-6px 0 0 #0a2a27 inset;transform:rotate(-2deg);transition:transform .4s}
+.cover:hover{transform:rotate(0)}
+.cover img{display:block;width:100%;height:auto}
+.book h3{font-size:clamp(30px,4.4vw,44px);color:#f8ebc4}
+.book .sub{color:var(--gold2);font-size:20px;margin:6px 0 18px;font-family:Amiri}
+.book p{color:#e3d9bc;max-width:62ch;margin:0 0 14px}
+.parts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:8px;margin:20px 0 24px;padding:0;list-style:none;counter-reset:p}
+.parts li{counter-increment:p;background:#ffffff0d;border:1px solid #c9a24a40;border-radius:12px;padding:10px 14px;font-size:15.5px;line-height:1.6}
+.parts li::before{content:"الباب " counter(p,arabic-indic) " · ";color:var(--gold2)}
+.meta{display:flex;flex-wrap:wrap;gap:18px;color:#cfc4a3;font-size:15px;margin-bottom:22px}
+.meta span{white-space:nowrap}
+.soon{display:inline-block;background:#c9a24a26;color:var(--gold2);border:1px solid #c9a24a66;border-radius:999px;padding:4px 14px;font-size:14px}
+/* works */
+.works{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px}
+.work{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+.work .k{font-size:14px;color:var(--gold)}
+.work h3{font-size:24px;margin:4px 0 8px}
+.work p{margin:0;color:var(--soft);font-size:15.5px;line-height:1.75}
+/* writing */
+.series{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+.art{position:relative;border-radius:16px;padding:22px 24px;background:var(--panel);border:1px solid var(--line);overflow:hidden}
+.art .n{position:absolute;inset-inline-start:16px;top:10px;font-family:Amiri;font-size:56px;line-height:1;color:var(--gold);opacity:.25}
+.art h3{font-size:22px;margin:0 0 6px;position:relative}
+.art p{margin:0;color:var(--soft);font-size:15.5px;position:relative}
+.note{margin-top:18px;color:var(--soft);font-size:15px}
+/* contact */
+.contact{background:var(--panel);border-top:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--bg)}
+.card .l{color:var(--soft);font-size:14px}
+.card .v{font-size:18px;font-weight:600;direction:ltr;text-align:right;overflow-wrap:anywhere;margin:4px 0 10px}
+.copy{min-height:44px;padding:6px 18px;border-radius:10px;border:1px solid var(--gold);background:transparent;color:var(--ink);font:600 15px "Noto Naskh Arabic",serif;cursor:pointer}
+.copy:hover{background:#c9a24a22}.copy:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+footer{background:#082523;color:#bfb497;text-align:center;padding:28px 18px;font-size:15px}
+footer b{color:var(--ivory);font-family:Amiri;font-size:18px}
+@media(max-width:860px){.about,.book{grid-template-columns:minmax(0,1fr)}.cover{max-width:280px;margin-inline:auto}}
+@media(max-width:600px){nav ul a{padding:8px 9px;font-size:14px}.facts b{width:5.5em}.arch{aspect-ratio:auto}.arch .in{padding:150px 10% 56px}.arch h1{font-size:32px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cover,.cover:hover{transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav aria-label="القائمة">
+  <div class="wrap">
+    <a class="brand" href="#top">محمد لطفي القطاوي</a>
+    <ul>
+      <li><a href="#about">نبذة</a></li>
+      <li><a href="#book">الكتاب</a></li>
+      <li><a href="#works">المؤلفات</a></li>
+      <li><a href="#writing">مقالات</a></li>
+      <li><a href="#contact">تواصل</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="pat" aria-hidden="true"><defs><pattern id="p" width="150" height="150" patternUnits="userSpaceOnUse"><g fill="none" stroke="#f0d79a" stroke-width="2"><polygon points="75,8 95,55 142,75 95,95 75,142 55,95 8,75 55,55"/><polygon points="75,32 106,44 118,75 106,106 75,118 44,106 32,75 44,44"/></g></pattern></defs><rect width="100%" height="100%" fill="url(#p)"/></svg>
+  <div class="wrap">
+    <div class="arch">
+      <svg viewBox="0 0 560 640" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#a87f2e"/><stop offset=".5" stop-color="#f1d58c"/><stop offset="1" stop-color="#a87f2e"/></linearGradient></defs>
+        <path d="M30,630 L30,250 Q30,90 280,20 Q530,90 530,250 L530,630 Z" fill="#05191755" stroke="url(#g)" stroke-width="5"/>
+        <path d="M48,612 L48,256 Q48,108 280,40 Q512,108 512,256 L512,612" fill="none" stroke="url(#g)" stroke-width="1.5"/>
+        <g transform="translate(280,128)">
+          <circle r="34" fill="none" stroke="url(#g)" stroke-width="2.5"/>
+          <polygon points="0,-30 9,-9 30,0 9,9 0,30 -9,9 -30,0 -9,-9" fill="url(#g)"/>
+          <polygon points="0,-30 9,-9 30,0 9,9 0,30 -9,9 -30,0 -9,-9" fill="url(#g)" opacity=".5" transform="rotate(45)"/>
+          <circle r="8" fill="#124540" stroke="url(#g)" stroke-width="2"/>
+        </g>
+        <rect x="30" y="626" width="500" height="5" fill="#d9b45f"/>
+      </svg>
+      <div class="in">
+        <h1>محمد محمد لطفي القطاوي</h1>
+        <p class="role">معلم اللغة العربية · شاعر وكاتب</p>
+        <p class="quote">أكتب للمعلم الذي يريد أن يربّي قبل أن يعلّم، وللقارئ الذي يحب العربية ويريد أن يفهم أسرارها.</p>
+        <div class="cta">
+          <a class="btn solid" href="#book">كتاب «التربية بالقيم»</a>
+          <a class="btn ghost" href="#contact">تواصل معي</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="band" id="about">
+  <div class="wrap">
+    <div class="head"><h2>نبذة</h2><span class="orn"></span></div>
+    <div class="about">
+      <div>
+        <p><strong>أ. محمد محمد لطفي القطاوي</strong> معلّم للغة العربية في دولة الإمارات العربية المتحدة، وشاعر وكاتب، يؤمن بأن تعليم العربية لا ينفصل عن تربية الإنسان، وأن الكلمة الصادقة قد تبني شخصية كاملة.</p>
+        <p>تخرّج في قسم اللغة العربية وآدابها بكلية الآداب، جامعة المنصورة، وبدأ رحلته في التعليم متطوّعًا في مصر، ثم انتقل إلى الإمارات معلّمًا للغة العربية، ويواصل اليوم دراسة الدبلوم العام في التربية.</p>
+        <p>يشغله سؤال واحد في كل ما يكتب: كيف تصل المعرفة إلى القلب قبل العقل؟ ومن هنا جاءت كتاباته التي تجمع بين أصالة التراث العربي والإسلامي وحاجات القارئ المعاصر، في التربية، وعلوم العربية، والأدب.</p>
+        <p>يكتب الشعر العمودي الموزون، ونُشرت له قصيدة في جريدة الفجر، ويكتب سلسلة «أسرار الإملاء» التي تكشف المنطق الكامن وراء قواعد الكتابة العربية، وألّف كتاب «التربية بالقيم» الذي يجمع بين الهدي النبوي والممارسة التربوية اليومية.</p>
+      </div>
+      <aside class="facts">
+        <h3>في سطور</h3>
+        <ul>
+          <li><b>المهنة</b><span>معلم اللغة العربية، الإمارات</span></li>
+          <li><b>المؤهل</b><span>ليسانس الآداب في اللغة العربية وآدابها، جامعة المنصورة</span></li>
+          <li><b>الدراسة</b><span>الدبلوم العام في التربية (حاليًا)</span></li>
+          <li><b>الاهتمامات</b><span>التربية بالقيم، التعلم النشط، النحو والإملاء</span></li>
+          <li><b>الكتابة</b><span>الشعر العمودي، المقال اللغوي والتربوي، التأليف التربوي</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band bookband" id="book">
+  <div class="wrap">
+    <div class="head"><h2>أحدث كتبي</h2><span class="orn"></span></div>
+    <div class="book">
+      <div class="cover"><img src="cover.jpg" width="600" height="960" alt="غلاف كتاب التربية بالقيم لمحمد محمد لطفي"></div>
+      <div>
+        <span class="soon">قريبًا على كتب Google Play</span>
+        <h3 style="margin-top:12px">التربية بالقيم</h3>
+        <p class="sub">هدي نبوي وممارسات تربوية في بناء شخصية الطالب</p>
+        <p>كيف نحوّل القيم من كلمات تُحفظ إلى سلوك يعيشه الطالب داخل الصف وخارجه؟ يجيب الكتاب عن هذا السؤال بمنهج يجمع بين الدليل الشرعي الصحيح الموثّق، والموقف المدرسي الواقعي، والخطوة العملية التي يستطيع المعلم تطبيقها في حصته.</p>
+        <ul class="parts">
+          <li>أصول التربية في الإسلام</li>
+          <li>المعلم المربي</li>
+          <li>هدي النبي ﷺ في التربية والتعليم</li>
+          <li>بناء القيم في شخصية الطالب</li>
+          <li>المشكلات السلوكية والتربوية</li>
+          <li>مواقف من داخل الصف</li>
+          <li>صناعة البيئة التربوية</li>
+          <li>المعلم وبناء نفسه</li>
+        </ul>
+        <div class="meta"><span>١٩٢ صفحة</span><span>كتاب إلكتروني</span><span>للمعلمين والمربين وأولياء الأمور وطلاب كليات التربية</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="works">
+  <div class="wrap">
+    <div class="head"><h2>المؤلفات</h2><span class="orn"></span></div>
+    <div class="works">
+      <article class="work"><div class="k">تربية</div><h3>التربية بالقيم</h3><p>هدي نبوي وممارسات تربوية في بناء شخصية الطالب، في ثمانية أبواب.</p></article>
+      <article class="work"><div class="k">نحو</div><h3>الفتح الميسر في شرح المقدمة الآجرومية</h3><p>شرح مبسّط لمتن الآجرومية للمبتدئين في علم النحو.</p></article>
+      <article class="work"><div class="k">شعر</div><h3>في نحو القلب</h3><p>ديوان من الشعر العمودي الموزون.</p></article>
+      <article class="work"><div class="k">شعر</div><h3>يا صاحبي</h3><p>ديوان شعري.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="writing" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><h2>سلسلة «أسرار الإملاء»</h2><span class="orn"></span></div>
+    <div class="series">
+      <article class="art"><span class="n">١</span><h3>بين التاءين</h3><p>متى نكتب التاء مربوطة ومتى نكتبها مفتوحة، ولماذا.</p></article>
+      <article class="art"><span class="n">٢</span><h3>بين الألفين</h3><p>لماذا نكتب «دعا» بالألف و«رمى» بالياء؟</p></article>
+      <article class="art"><span class="n">٣</span><h3>سُلَّم الهمزة المتوسطة</h3><p>لماذا نكتب «سُئل» و«سأل» و«بؤس»؟ قاعدة الحركة الأقوى.</p></article>
+    </div>
+    <p class="note">سلسلة مقالات تشرح قواعد الإملاء العربي بأسلوب ميسّر يكشف المنطق الكامن وراءها، للطلاب والمعلمين ومحبي العربية.</p>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="wrap">
+    <div class="head"><h2>تواصل معي</h2><span class="orn"></span></div>
+    <div class="cards">
+      <div class="card"><div class="l">الهاتف وواتساب</div><div class="v">+971 50 791 6185</div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="copy" data-t="+971507916185">نسخ الرقم</button><a class="btn solid" style="min-height:44px" href="https://wa.me/971507916185">مراسلة واتساب</a></div></div>
+      <div class="card"><div class="l">البريد الإلكتروني</div><div class="v" id="em">mohamedkatawey3@gmail.com</div><button class="copy" data-t="mohamedkatawey3@gmail.com">نسخ البريد</button></div>
+      <div class="card"><div class="l">تيك توك</div><div class="v">@mohamed.katawey</div><a class="btn solid" style="min-height:44px" href="https://www.tiktok.com/@mohamed.katawey">زيارة الحساب</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><b>محمد محمد لطفي القطاوي</b><br>معلم اللغة العربية · شاعر وكاتب</footer>
+
+<script>
+{
+  for (const b of document.querySelectorAll('.copy')) {
+    b.addEventListener('click', async () => {
+      const old = b.textContent;
+      try { await navigator.clipboard.writeText(b.dataset.t); b.textContent = 'تم النسخ'; }
+      catch (e) { b.textContent = 'انسخه يدويًا'; }
+      setTimeout(() => { b.textContent = old; }, 1800);
+    });
+  }
+}
+</script>
+</body>
+</html>
